@@ -158,6 +158,7 @@ function srr_rss_parser($instance){
 				$newtab = ($open_newtab) ? ' target="_blank"' : '';
 				
 				// Get the date
+            date_default_timezone_set(get_option('timezone_string'));
 				$date = $item->get_date('j F Y');
 				
 				// Get thumbnail if present @since v2.2
